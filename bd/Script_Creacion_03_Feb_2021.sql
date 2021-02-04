@@ -262,7 +262,7 @@ CREATE TABLE IF NOT EXISTS `bdconectate`.`direccion_iglesia` (
   `iddir_iglesia` INT NOT NULL AUTO_INCREMENT,
   `idiglesia` INT NOT NULL,
   `id_direccion` INT NOT NULL,
-  `dir_calle` DECIMAL(250) NOT NULL,
+  `dir_calle` VARCHAR(300) NOT NULL,
   `dir_num_ext` VARCHAR(10) NULL,
   `dir_num_int` VARCHAR(10) NULL,
   `dir_entre_calles` VARCHAR(200) NULL,
