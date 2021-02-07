@@ -1,3 +1,7 @@
 
 insert into `cat_status_usuario` (`clave` , `desc` ,`ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod` )values('SADMIN', 'super administrador - control del sistema', now(),now(),1 ); 
 insert into `usuario`(`user_id_con`,`user_email`,`user_matricula`,`user_pwd`,`user_status`,`ctrl_fecha_create`,`ctrl_fecha_update`)values (0,'mecatr_onics@hotmail.com','VN0000001','admin',1,now(),now());
+
+insert into `cat_sexo`(`nombre` , `ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`) values ('MASCULINO',now(),now(),1);
+insert into `cat_sexo`(`nombre` , `ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`) values ('FEMENINO',now(),now(),1);
+
