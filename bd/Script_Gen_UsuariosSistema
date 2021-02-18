@@ -2,9 +2,9 @@
 insert into `cat_status_usuario` (`clave` , `desc` ,`ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod` )values('ACT', 'Usuario de sistema activo', now(),now(),1 ); 
 INSERT INTO `bdconectate`.`cat_rol` (`idcat_rol`, `clave_rol`, `nombre`, `desc`, `status`, `ctrl_fecha_create`, `ctrl_fecha_update`, `ctrl_user_mod`) VALUES ('1', 'SADMIN', 'super administrador', 'control del todo sistema', '1', now(), now(), 1);
 
-insert into `usuario`(`user_id_con`,`user_email`,`user_matricula`,`user_pwd`,`user_status`,`ctrl_fecha_create`,`ctrl_fecha_update`, `ctrl_user_mod`)values (1,'mecatr_onics@hotmail.com','VN0000001','admin',1,now(),now(), 1);
+insert into `usuario`(`user_id_con`,`user_email`,`user_matricula`,`user_pwd`,`user_status`,`ctrl_fecha_create`,`ctrl_fecha_update`, `ctrl_user_mod`)values (1,'mecatr_onics@hotmail.com','VN0000001','$10$aB6ChjJJ2G5WUmo9rw9Gxe0YyAhNmWvWBMIvaEkIvS7A9G75zLwcS',1,now(),now(), 1);
 INSERT INTO `bdconectate`.`usuario_roles` (`id_usu_rol`, `id_usuario`, `usu_cat_rol`, `ctrl_fecha_create`, `ctrl_fecha_update`, `ctrl_user_mod`) VALUES ('1', '1', '1', now(), now(),1);
-
+-- Pass es admin
 
 insert into `cat_sexo`(`nombre` , `ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`) values ('MASCULINO',now(),now(),1);
 insert into `cat_sexo`(`nombre` , `ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`) values ('FEMENINO',now(),now(),1);
