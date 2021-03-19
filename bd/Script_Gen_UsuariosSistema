@@ -9,3 +9,68 @@ INSERT INTO `bdconectate`.`usuario_roles` (`id_usu_rol`, `id_usuario`, `usu_cat_
 insert into `cat_sexo`(`nombre` , `ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`) values ('MASCULINO',now(),now(),1);
 insert into `cat_sexo`(`nombre` , `ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`) values ('FEMENINO',now(),now(),1);
 
+
+
+--Navegacion
+
+
+INSERT INTO `bdconectate`.`cat_navegacion`
+(`grupo`,`nivel`,`hijo`,`id`,`title`,`subtitle`,`type`,`active`,`disabled`,`link`,`external_link`,`exact_match`,
+`classes`,`icon`,`icon_classes`,`badge_title`,`badge_style`,`badge_background`,`badge_color`,`meta`,`ctrl_fecha_create`,
+`ctrl_fecha_update`,`ctrl_user_mod`)
+VALUES
+(1,0,null,'congregates','Congregantes','Informacion de general congregantes','group',
+null,null,'/dashboards/finance',null,null,null,'heroicons_outline:home',null,null,null,null,null,null,now(),now(),1);
+
+
+
+
+
+INSERT INTO `bdconectate`.`cat_navegacion`
+(`grupo`,`nivel`,`hijo`,`id`,`title`,`subtitle`,`type`,`active`,`disabled`,`link`,`external_link`,`exact_match`,
+`classes`,`icon`,`icon_classes`,`badge_title`,`badge_style`,`badge_background`,`badge_color`,`meta`,`ctrl_fecha_create`,
+`ctrl_fecha_update`,`ctrl_user_mod`)
+VALUES
+(1,1,null,'congregates.con','Congregantes',null,'collapsable',
+null,null,'/dashboards/finance',null,null,null,'heroicons_outline:user-group',null,null,null,null,null,null,now(),now(),1);
+
+
+INSERT INTO `bdconectate`.`cat_navegacion`
+(`grupo`,`nivel`,`hijo`,`id`,`title`,`subtitle`,`type`,`active`,`disabled`,`link`,`external_link`,`exact_match`,
+`classes`,`icon`,`icon_classes`,`badge_title`,`badge_style`,`badge_background`,`badge_color`,`meta`,`ctrl_fecha_create`,
+`ctrl_fecha_update`,`ctrl_user_mod`)
+VALUES
+(1,2,null,'congregates.con.general','General',null,'basic',
+null,null,'/dashboards/finance',null,null,null,null,null,null,null,null,null,null,now(),now(),1);
+
+INSERT INTO `bdconectate`.`cat_navegacion`
+(`grupo`,`nivel`,`hijo`,`id`,`title`,`subtitle`,`type`,`active`,`disabled`,`link`,`external_link`,`exact_match`,
+`classes`,`icon`,`icon_classes`,`badge_title`,`badge_style`,`badge_background`,`badge_color`,`meta`,`ctrl_fecha_create`,
+`ctrl_fecha_update`,`ctrl_user_mod`)
+VALUES
+(1,2,null,'congregates.con.servidores','Servidores',null,'basic',
+null,null,'/dashboards/finance',null,null,null,null,null,null,null,null,null,null,now(),now(),1);
+
+
+-- Asigna valor a super admin
+
+INSERT INTO `bdconectate`.`navegacion_roles`
+(`id_cat_rol`,`id_cat_navegacion`,`ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`)
+VALUES
+(1,1,now(),now(),1);
+
+INSERT INTO `bdconectate`.`navegacion_roles`
+(`id_cat_rol`,`id_cat_navegacion`,`ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`)
+VALUES
+(1,2,now(),now(),1);
+
+INSERT INTO `bdconectate`.`navegacion_roles`
+(`id_cat_rol`,`id_cat_navegacion`,`ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`)
+VALUES
+(1,3,now(),now(),1);
+
+INSERT INTO `bdconectate`.`navegacion_roles`
+(`id_cat_rol`,`id_cat_navegacion`,`ctrl_fecha_create`,`ctrl_fecha_update`,`ctrl_user_mod`)
+VALUES
+(1,4,now(),now(),1);
+
